@@ -16,6 +16,7 @@
 		AA080ADB1DDB8D9E0061A322 /* Musician.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080ADA1DDB8D9E0061A322 /* Musician.m */; };
 		AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */; };
 		AA080AE11DDB911A0061A322 /* MusicianManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080AE01DDB911A0061A322 /* MusicianManager.m */; };
+		AA080AED1DDBBBD40061A322 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080AEC1DDBBBD40061A322 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
 		AA080ADF1DDB911A0061A322 /* MusicianManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicianManager.h; sourceTree = "<group>"; };
 		AA080AE01DDB911A0061A322 /* MusicianManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicianManager.m; sourceTree = "<group>"; };
+		AA080AEB1DDBBBD40061A322 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		AA080AEC1DDBBBD40061A322 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			children = (
 				AA080AC81DDB8C4E0061A322 /* ViewController.h */,
 				AA080AC91DDB8C4E0061A322 /* ViewController.m */,
+				AA080AEB1DDBBBD40061A322 /* DetailViewController.h */,
+				AA080AEC1DDBBBD40061A322 /* DetailViewController.m */,
 				AA080ADF1DDB911A0061A322 /* MusicianManager.h */,
 				AA080AE01DDB911A0061A322 /* MusicianManager.m */,
 				AA080AD91DDB8D9E0061A322 /* Musician.h */,
@@ -172,6 +177,7 @@
 				AA080ADB1DDB8D9E0061A322 /* Musician.m in Sources */,
 				AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */,
 				AA080AC41DDB8C4E0061A322 /* main.m in Sources */,
+				AA080AED1DDBBBD40061A322 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,7 @@
 				AA080AD81DDB8C4E0061A322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
