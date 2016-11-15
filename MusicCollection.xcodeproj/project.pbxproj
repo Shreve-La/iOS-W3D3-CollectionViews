@@ -13,6 +13,9 @@
 		AA080ACD1DDB8C4E0061A322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA080ACB1DDB8C4E0061A322 /* Main.storyboard */; };
 		AA080ACF1DDB8C4E0061A322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA080ACE1DDB8C4E0061A322 /* Assets.xcassets */; };
 		AA080AD21DDB8C4E0061A322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA080AD01DDB8C4E0061A322 /* LaunchScreen.storyboard */; };
+		AA080ADB1DDB8D9E0061A322 /* Musician.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080ADA1DDB8D9E0061A322 /* Musician.m */; };
+		AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */; };
+		AA080AE11DDB911A0061A322 /* MusicianManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080AE01DDB911A0061A322 /* MusicianManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		AA080ACE1DDB8C4E0061A322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA080AD11DDB8C4E0061A322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA080AD31DDB8C4E0061A322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA080AD91DDB8D9E0061A322 /* Musician.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musician.h; sourceTree = "<group>"; };
+		AA080ADA1DDB8D9E0061A322 /* Musician.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musician.m; sourceTree = "<group>"; };
+		AA080ADC1DDB8DAE0061A322 /* PhotoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoObject.h; sourceTree = "<group>"; };
+		AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoObject.m; sourceTree = "<group>"; };
+		AA080ADF1DDB911A0061A322 /* MusicianManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicianManager.h; sourceTree = "<group>"; };
+		AA080AE01DDB911A0061A322 /* MusicianManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicianManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +67,15 @@
 		AA080AC11DDB8C4E0061A322 /* MusicCollection */ = {
 			isa = PBXGroup;
 			children = (
-				AA080AC51DDB8C4E0061A322 /* AppDelegate.h */,
-				AA080AC61DDB8C4E0061A322 /* AppDelegate.m */,
 				AA080AC81DDB8C4E0061A322 /* ViewController.h */,
 				AA080AC91DDB8C4E0061A322 /* ViewController.m */,
+				AA080ADF1DDB911A0061A322 /* MusicianManager.h */,
+				AA080AE01DDB911A0061A322 /* MusicianManager.m */,
+				AA080AD91DDB8D9E0061A322 /* Musician.h */,
+				AA080ADA1DDB8D9E0061A322 /* Musician.m */,
+				AA080ADC1DDB8DAE0061A322 /* PhotoObject.h */,
+				AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */,
 				AA080ACB1DDB8C4E0061A322 /* Main.storyboard */,
-				AA080ACE1DDB8C4E0061A322 /* Assets.xcassets */,
-				AA080AD01DDB8C4E0061A322 /* LaunchScreen.storyboard */,
-				AA080AD31DDB8C4E0061A322 /* Info.plist */,
 				AA080AC21DDB8C4E0061A322 /* Supporting Files */,
 			);
 			path = MusicCollection;
@@ -74,6 +84,11 @@
 		AA080AC21DDB8C4E0061A322 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA080AC51DDB8C4E0061A322 /* AppDelegate.h */,
+				AA080AC61DDB8C4E0061A322 /* AppDelegate.m */,
+				AA080ACE1DDB8C4E0061A322 /* Assets.xcassets */,
+				AA080AD01DDB8C4E0061A322 /* LaunchScreen.storyboard */,
+				AA080AD31DDB8C4E0061A322 /* Info.plist */,
 				AA080AC31DDB8C4E0061A322 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,6 +168,9 @@
 			files = (
 				AA080ACA1DDB8C4E0061A322 /* ViewController.m in Sources */,
 				AA080AC71DDB8C4E0061A322 /* AppDelegate.m in Sources */,
+				AA080AE11DDB911A0061A322 /* MusicianManager.m in Sources */,
+				AA080ADB1DDB8D9E0061A322 /* Musician.m in Sources */,
+				AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */,
 				AA080AC41DDB8C4E0061A322 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
