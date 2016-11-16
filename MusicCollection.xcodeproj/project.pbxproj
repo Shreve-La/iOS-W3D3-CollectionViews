@@ -74,13 +74,8 @@
 				AA080AC91DDB8C4E0061A322 /* ViewController.m */,
 				AA080AEB1DDBBBD40061A322 /* DetailViewController.h */,
 				AA080AEC1DDBBBD40061A322 /* DetailViewController.m */,
-				AA080ADF1DDB911A0061A322 /* MusicianManager.h */,
-				AA080AE01DDB911A0061A322 /* MusicianManager.m */,
-				AA080AD91DDB8D9E0061A322 /* Musician.h */,
-				AA080ADA1DDB8D9E0061A322 /* Musician.m */,
-				AA080ADC1DDB8DAE0061A322 /* PhotoObject.h */,
-				AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */,
 				AA080ACB1DDB8C4E0061A322 /* Main.storyboard */,
+				AA080AEE1DDBBCE40061A322 /* Model */,
 				AA080AC21DDB8C4E0061A322 /* Supporting Files */,
 			);
 			path = MusicCollection;
@@ -97,6 +92,19 @@
 				AA080AC31DDB8C4E0061A322 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA080AEE1DDBBCE40061A322 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA080ADF1DDB911A0061A322 /* MusicianManager.h */,
+				AA080AE01DDB911A0061A322 /* MusicianManager.m */,
+				AA080AD91DDB8D9E0061A322 /* Musician.h */,
+				AA080ADA1DDB8D9E0061A322 /* Musician.m */,
+				AA080ADC1DDB8DAE0061A322 /* PhotoObject.h */,
+				AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
