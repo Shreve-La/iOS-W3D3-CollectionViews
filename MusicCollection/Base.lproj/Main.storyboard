@@ -20,13 +20,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iQ7-rS-1Om">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2Ei-rQ-zO6">
+                                    <size key="itemSize" width="138" height="120"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="JTq-Y4-KeD" customClass="CollectionViewCell">
+                                        <rect key="frame" x="0.0" y="50" width="138" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="138" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iggy02" translatesAutoresizingMaskIntoConstraints="NO" id="dtC-m9-WL5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="138" height="120"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dtC-m9-WL5" secondAttribute="trailing" id="AK5-ly-bbL"/>
+                                            <constraint firstItem="dtC-m9-WL5" firstAttribute="top" secondItem="JTq-Y4-KeD" secondAttribute="top" id="B6F-0d-x2W"/>
+                                            <constraint firstAttribute="bottom" secondItem="dtC-m9-WL5" secondAttribute="bottom" id="NYT-4D-EfZ"/>
+                                            <constraint firstItem="dtC-m9-WL5" firstAttribute="leading" secondItem="JTq-Y4-KeD" secondAttribute="leading" id="Nyh-RN-Ycw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="dtC-m9-WL5" id="wNi-df-JFl"/>
+                                            <segue destination="5z7-Rk-qe4" kind="show" identifier="DetailViewController" id="kYK-MR-ClD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="UJb-Rf-V36" customClass="CollectionReusableView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-zC-4lf">
+                                            <rect key="frame" x="156" y="9" width="64" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="sYr-zC-4lf" firstAttribute="centerX" secondItem="UJb-Rf-V36" secondAttribute="centerX" id="1Ak-fS-Lrw"/>
+                                        <constraint firstItem="sYr-zC-4lf" firstAttribute="centerY" secondItem="UJb-Rf-V36" secondAttribute="centerY" id="LhX-6p-bEs"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="label" destination="sYr-zC-4lf" id="J9X-7z-UJW"/>
+                                    </connections>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iQ7-rS-1Om" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9hn-1a-FhZ"/>
+                            <constraint firstItem="iQ7-rS-1Om" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ARI-8S-ZEZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iQ7-rS-1Om" secondAttribute="bottom" id="KOg-xf-mUE"/>
+                            <constraint firstAttribute="trailing" secondItem="iQ7-rS-1Om" secondAttribute="trailing" id="kRZ-Ue-BXV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jWF-xs-VtT"/>
+                    <connections>
+                        <outlet property="collectionView" destination="iQ7-rS-1Om" id="c8I-tb-oe9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="115"/>
+            <point key="canvasLocation" x="372" y="114.69265367316342"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ac8-c5-OXp">
@@ -40,7 +106,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iggy01" translatesAutoresizingMaskIntoConstraints="NO" id="CRK-Oh-BLb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iggy01" translatesAutoresizingMaskIntoConstraints="NO" id="CRK-Oh-BLb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -81,5 +147,6 @@
     </scenes>
     <resources>
         <image name="iggy01" width="400" height="400"/>
+        <image name="iggy02" width="400" height="400"/>
     </resources>
 </document>

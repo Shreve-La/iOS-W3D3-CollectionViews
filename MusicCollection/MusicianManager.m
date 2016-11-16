@@ -8,6 +8,7 @@
 
 #import "MusicianManager.h"
 #import "Musician.h"
+#import "PhotoObject.h"
 
 @implementation MusicianManager
 - (instancetype)init
@@ -22,4 +23,20 @@
   }
   return self;
 }
+
+
+- (NSInteger)numberOfItemsInSection:(NSInteger)section {
+  return self.musicianArray[section].photoObjectArray.count;
+}
+
+- (PhotoObject *)photoItemAtIndexPath:(NSIndexPath *)indexPath {
+  Musician *musician = self.musicianArray[indexPath.section];
+  PhotoObject *photoObject = musician.photoObjectArray[indexPath.item];
+  return photoObject;
+}
+
+- (Musician *)musicianAtIndexPath:(NSIndexPath *)indexPath {
+  return self.musicianArray[indexPath.section];
+}
+
 @end
