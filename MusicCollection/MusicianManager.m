@@ -9,6 +9,7 @@
 #import "MusicianManager.h"
 #import "Musician.h"
 #import "PhotoObject.h"
+#import "CollectionViewCell.h"
 
 @implementation MusicianManager
 - (instancetype)init
@@ -24,15 +25,26 @@
   return self;
 }
 
-
-- (NSInteger)numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+  return self.musicianArray.count;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
   return self.musicianArray[section].photoObjectArray.count;
 }
 
-- (PhotoObject *)photoItemAtIndexPath:(NSIndexPath *)indexPath {
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *id = @"Cell";
+  CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:id forIndexPath:indexPath];
   Musician *musician = self.musicianArray[indexPath.section];
   PhotoObject *photoObject = musician.photoObjectArray[indexPath.item];
-  return photoObject;
+  cell.photoObject = photoObject;
+  return cell;
+}
+
+- (PhotoObject *)photoItemAtIndexPath:(NSIndexPath *)indexPath {
+  NSInteger section = indexPath.section;
+  NSInteger row = indexPath.row;
+  return self.musicianArray[section].photoObjectArray[row];
 }
 
 - (Musician *)musicianAtIndexPath:(NSIndexPath *)indexPath {

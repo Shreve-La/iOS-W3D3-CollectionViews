@@ -14,9 +14,8 @@
 @class Musician;
 @class PhotoObject;
 
-@interface MusicianManager : NSObject
+@interface MusicianManager : NSObject<UICollectionViewDataSource>
 @property (nonatomic, readonly) NSArray <Musician *>* musicianArray;
-- (NSInteger)numberOfItemsInSection:(NSInteger)section;
 - (PhotoObject *)photoItemAtIndexPath:(NSIndexPath *)indexPath;
 - (Musician *)musicianAtIndexPath:(NSIndexPath *)indexPath;
 @end
