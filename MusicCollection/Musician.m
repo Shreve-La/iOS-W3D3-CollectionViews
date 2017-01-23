@@ -28,7 +28,7 @@
     [self createPhotosWithName:@"iggy"];
   }
   if ([_name isEqualToString:@"Lady Gaga"]) {
-    [self createPhotosWithName:@"iggy"];
+    [self createPhotosWithName:@"lady"];
   }
 }
 
