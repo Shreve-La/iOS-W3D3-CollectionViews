@@ -17,6 +17,8 @@
 		AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080ADD1DDB8DAE0061A322 /* PhotoObject.m */; };
 		AA080AE11DDB911A0061A322 /* MusicianManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080AE01DDB911A0061A322 /* MusicianManager.m */; };
 		AA080AED1DDBBBD40061A322 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA080AEC1DDBBBD40061A322 /* DetailViewController.m */; };
+		AACD64C41E38F1BD005BC877 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AACD64C31E38F1BD005BC877 /* CollectionViewCell.m */; };
+		AACD64C71E38FB69005BC877 /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AACD64C61E38FB68005BC877 /* CollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		AA080AE01DDB911A0061A322 /* MusicianManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicianManager.m; sourceTree = "<group>"; };
 		AA080AEB1DDBBBD40061A322 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		AA080AEC1DDBBBD40061A322 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		AACD64C21E38F1BD005BC877 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		AACD64C31E38F1BD005BC877 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		AACD64C51E38FB68005BC877 /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionReusableView.h; sourceTree = "<group>"; };
+		AACD64C61E38FB68005BC877 /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,10 @@
 				AA080AC91DDB8C4E0061A322 /* ViewController.m */,
 				AA080AEB1DDBBBD40061A322 /* DetailViewController.h */,
 				AA080AEC1DDBBBD40061A322 /* DetailViewController.m */,
+				AACD64C21E38F1BD005BC877 /* CollectionViewCell.h */,
+				AACD64C31E38F1BD005BC877 /* CollectionViewCell.m */,
+				AACD64C51E38FB68005BC877 /* CollectionReusableView.h */,
+				AACD64C61E38FB68005BC877 /* CollectionReusableView.m */,
 				AA080ACB1DDB8C4E0061A322 /* Main.storyboard */,
 				AA080AEE1DDBBCE40061A322 /* Model */,
 				AA080AC21DDB8C4E0061A322 /* Supporting Files */,
@@ -181,10 +191,12 @@
 			files = (
 				AA080ACA1DDB8C4E0061A322 /* ViewController.m in Sources */,
 				AA080AC71DDB8C4E0061A322 /* AppDelegate.m in Sources */,
+				AACD64C71E38FB69005BC877 /* CollectionReusableView.m in Sources */,
 				AA080AE11DDB911A0061A322 /* MusicianManager.m in Sources */,
 				AA080ADB1DDB8D9E0061A322 /* Musician.m in Sources */,
 				AA080ADE1DDB8DAE0061A322 /* PhotoObject.m in Sources */,
 				AA080AC41DDB8C4E0061A322 /* main.m in Sources */,
+				AACD64C41E38F1BD005BC877 /* CollectionViewCell.m in Sources */,
 				AA080AED1DDBBBD40061A322 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

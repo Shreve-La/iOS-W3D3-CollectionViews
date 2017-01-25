@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PhotoObject;
 
 @interface DetailViewController : UIViewController
-
+@property (nonatomic) PhotoObject *photoObject;
 @end

@@ -12,7 +12,12 @@
 
 @import UIKit;
 @class Musician;
+@class PhotoObject;
 
 @interface MusicianManager : NSObject
 @property (nonatomic, readonly) NSArray <Musician *>* musicianArray;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfItemsInSection:(NSInteger)section;
+- (PhotoObject*)photoObjectAtIndexPath:(NSIndexPath*)indexPath;
+- (Musician *)musicianAtIndexPath:(NSIndexPath *)indexPath;
 @end

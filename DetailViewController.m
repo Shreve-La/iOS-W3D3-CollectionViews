@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "PhotoObject.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -15,7 +16,9 @@
 @implementation DetailViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  self.imageView.image = self.photoObject.image;
+  
 }
 
 @end
