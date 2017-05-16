@@ -7,9 +7,9 @@
 //
 
 /*
- * Each Musician has a number of PhotoObjects
- * The Musician object handles the array of PhotoObjects
- * The Musician object will also handle the section headers, hence the name property.
+ * Each Musician manages a number of PhotoObject instances stored in an array.
+ * The Musician object models the collectionview's sections.
+ * The section headers will be populated using the "name" property.
  */
 
 @import UIKit;

@@ -10,15 +10,13 @@
 #import "Musician.h"
 
 @implementation MusicianManager
-- (instancetype)init
-{
+- (instancetype)init {
   self = [super init];
   if (self) {
-    NSMutableArray *temp = [NSMutableArray new];
-    [temp addObject:[[Musician alloc] initWithName:@"Taylor Swift"]];
-    [temp addObject:[[Musician alloc] initWithName:@"Iggy Pop"]];
-    [temp addObject:[[Musician alloc] initWithName:@"Lady Gaga"]];
-    _musicianArray = [temp copy];
+    Musician *m1 = [[Musician alloc] initWithName:@"Taylor Swift"];
+    Musician *m2 = [[Musician alloc] initWithName:@"Iggy Pop"];
+    Musician *m3 = [[Musician alloc] initWithName:@"Lady Gaga"];
+    _musicianArray = @[m1, m2, m3];
   }
   return self;
 }
